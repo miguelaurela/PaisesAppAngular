@@ -1,1 +1,25 @@
-<p>ver-pais works!</p>
+<div class="alert alert-info">
+    Espere por favor...
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h1>
+            Pais <small>{{pais.name.common}}</small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h3>Bandera</h3>
+            <img [src]="pais.flag" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <h3>Informacion</h3>
+            <ul class="list-group">
+                <li class="list-goup-item">
+                    <strong>Población</strong> {{pais.population}}
+                </li>
+            </ul>   
+        </div>
+    </div>
+</div>
